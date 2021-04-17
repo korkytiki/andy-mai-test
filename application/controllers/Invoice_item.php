@@ -124,6 +124,8 @@ class invoice_item extends CI_Controller {
 
 	public function batch_save()
 	{
+		$this->load->model('product_model', 'product');
+
 		$this->_check_login();
 		
 		$item_list = $this->input->post('item_list');
@@ -140,6 +142,10 @@ class invoice_item extends CI_Controller {
 				);
 				$this->invoice_item->create($invoice_item);
 				$invoice_item['ID'] = $this->db->insert_id();
+
+				// $product = $this->product->get($item['product_ID']);
+				// $product->qty = $product->qty - $item['qty'];
+				// $this->product->update($product, $product->ID);
 
 				$saved_item_list[] = $invoice_item;
 			}

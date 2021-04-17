@@ -70,9 +70,9 @@
 			<li class="nav-item <?php echo $menu == 'products' ? 'active' : ''; ?>">
 				<a class="nav-link" href="<?php echo site_url('dashboard/products'); ?>">Products</a>
 			</li>
-			<li class="nav-item <?php echo $menu == 'customers' ? 'active' : ''; ?>">
+			<!-- <li class="nav-item <?php echo $menu == 'customers' ? 'active' : ''; ?>">
 				<a class="nav-link" href="<?php echo site_url('dashboard/customers'); ?>">Customers</a>
-			</li>
+			</li> -->
 		</ul>
 	</div>
 	<div class="pull-right d-flex justify-content-end">

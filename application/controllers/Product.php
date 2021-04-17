@@ -119,6 +119,7 @@ class Product extends CI_Controller {
 
 	public function compute_latest_qty() 
 	{
+		// TODO: proper ledgering
 		$this->load->model('invoice_item_model', 'invoice_item');
 
 		$this->_check_login();

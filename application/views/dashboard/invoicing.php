@@ -175,6 +175,21 @@
 		deletedItems.length = 0;
 	}
 
+	function updateProductQTY() {
+		
+		$.ajax({
+			url: BASE_URL + 'product/',
+			type: "get",
+			success: function(products){
+				
+			},
+			error: function(error){
+				
+				alert(error.responseText);
+			}
+		});
+	}
+
 	$('#btnAddItem').on("click", function(){
 
 		var productID = $('#ddlProducts').val();

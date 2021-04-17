@@ -1,8 +1,5 @@
 Invoicing System For a Hardware -Andy Mai Test
 
-TODO
-product qty limit and FE validation of it
-
 SETUP
 
 - git clone
@@ -25,7 +22,7 @@ NOTES
 	- dashboard
 	- invoicing
 	- products
-	- customers
+	- customers (hidden)
 	- login
 
 Nice to have
